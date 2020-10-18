@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="/img/logo_black.png" />
+    <title>Registrar</title>
+
+    <%- include("util/head") -%>
+</head>
+<body>
+
+    <%- include("util/nav") -%>
+
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h3>Registar</h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- <%- include("util/alert-message") -%> -->
+                        <form action="/register" method="POST" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <input type="text" name="txtName" placeholder="Nombre" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="txtEmail" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="txtPassword" id="txtPassword" placeholder="Password" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-dark btn-block" type="submit" id="btnLogin">
+                                    Sign Up
+                                </button>
+                            </div>
+                        </form>
+
+                        <hr>
+                        <div class="text-center">
+                            <p>Tienes una cuenta? <a href="/login">Ingresa</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include("util/footer") -%>
+    <%- include("util/script") -%>
+</body>
+</html>

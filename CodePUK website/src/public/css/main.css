@@ -1,0 +1,29 @@
+html {
+  font-size: 14px;
+}
+
+#lblExtension {
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.container {
+  max-width: 960px;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+}
+
+.logo-nav {
+  width: 8%;
+}
